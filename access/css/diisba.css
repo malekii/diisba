@@ -1,3 +1,13 @@
+/*
+Diisba Framework 2.1.x
+Auther => Muhammad Maleki
+Site => http://diisba.ir
+Email => molkan99@gmail.com
+Email => info@diisba.ir
+ID Telegram => @Muhammad_Maleki
+*/
+
+
 body{
   clear: both;
   padding:0;
@@ -15,56 +25,197 @@ body[dir="ltr"]{
     min-width:100%;
     padding:0;
     margin:0;
-    display: inline-block;
-    background-color: #505050;
-}
-.di-row.space{
-  margin:5px;
-  min-width:99.2%;
+    display: block;
+    overflow: hidden;
 }
 .di-row:after{
     content:"";
     clear: both;
 }
-
+.di-row div{
+  width:98%;
+  margin:5px;
+  padding:0;
+  display: inline-block;
+}
 .di-row .di-col-1,.di-row .di-col-2,.di-row .di-col-3,.di-row .di-col-4,.di-row .di-col-5,.di-row .di-col-6,.di-row .di-col-7,.di-row .di-col-8,.di-row .di-col-9,.di-row .di-col-10,.di-row .di-col-11,.di-row .di-col-12{
   float:right;
-  background-color: #FFF;
-  margin:5px;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+body[dir="rtl"] [class*="di-col-"]{
+  float:right;
+}
+body[dir="ltr"] [class*="di-col-"]{
+  float:left;
 }
 .di-row .di-col-1{
-  width:7.6%;
+  width:8.333333333333333%;
 }
 .di-row .di-col-2{
-  width:15.2%;
+  width:16.66666666666667%;
 }
 .di-row .di-col-3{
-  width:22.8%;
+  width:25%;
 }
 .di-row .di-col-4{
-  width:30.4%;
+  width:33.33333333333333%;
 }
 .di-row .di-col-5{
-  width:38%;
+  width:41.66666666666667%;
 }
 .di-row .di-col-6{
-  width:45.6%;
+  width:50%;
 }
 .di-row .di-col-7{
-  width:53.2%;
+  width:58.33333333333333%;
 }
 .di-row .di-col-8{
-  width:60.8%;
+  width:66.66666666666666%;
 }
 .di-row .di-col-9{
-  width:68.4%;
+  width:75%;
 }
 .di-row .di-col-10{
-  width:76%;
+  width:83.33333333333333%;
 }
 .di-row .di-col-11{
-  width:83.6%;
+  width:91.66666666666666%;
 }
 .di-row .di-col-12{
-  width:91.2%;
+  width:100%;
+}
+
+@media (max-width:240px){
+  .di-row .di-col-1{
+    width:100%;
+  }
+  .di-row .di-col-2{
+    width:100%;
+  }
+  .di-row .di-col-3{
+    width:100%;
+  }
+  .di-row .di-col-4{
+    width:100%;
+  }
+  .di-row .di-col-5{
+    width:100%;
+  }
+  .di-row .di-col-6{
+    width:100%;
+  }
+  .di-row .di-col-7{
+    width:100%;
+  }
+  .di-row .di-col-8{
+    width:100%;
+  }
+  .di-row .di-col-9{
+    width:100%;
+  }
+  .di-row .di-col-10{
+    width:100%;
+  }
+  .di-row .di-col-11{
+    width:100%;
+  }
+  .di-row .di-col-12{
+    width:100%;
+  }
+}
+
+@media (max-width:390px){
+  .di-row .di-col-1{
+    width:100%;
+  }
+  .di-row .di-col-2{
+    width:100%;
+  }
+  .di-row .di-col-3{
+    width:100%;
+  }
+  .di-row .di-col-4{
+    width:100%;
+  }
+  .di-row .di-col-5{
+    width:50%;
+  }
+  .di-row .di-col-6{
+    width:50%;
+  }
+  .di-row .di-col-7{
+    width:100%;
+  }
+  .di-row .di-col-8{
+    width:100%;
+  }
+  .di-row .di-col-9{
+    width:100%;
+  }
+  .di-row .di-col-10{
+    width:100%;
+  }
+  .di-row .di-col-11{
+    width:100%;
+  }
+  .di-row .di-col-12{
+    width:100%;
+  }
+}
+
+@media (max-width:800px){
+  .di-row .di-col-1{
+    width:100%;
+  }
+  .di-row .di-col-2{
+    width:33.33333333333333%;
+  }
+  .di-row .di-col-3{
+    width:50%;
+  }
+  .di-row .di-col-4{
+    width:33.33333333333333%;
+  }
+  .di-row .di-col-5{
+    width:50%;
+  }
+  .di-row .di-col-6{
+    width:50%;
+  }
+  .di-row .di-col-7{
+    width:100%;
+  }
+  .di-row .di-col-8{
+    width:100%;
+  }
+  .di-row .di-col-9{
+    width:100%;
+  }
+  .di-row .di-col-10{
+    width:100%;
+  }
+  .di-row .di-col-11{
+    width:100%;
+  }
+  .di-row .di-col-12{
+    width:100%;
+  }
+}
+
+@media (min-width:1600px){
+.di-body{
+  margin:0;
+  padding:0;
+  width:100%;
+  text-align: center;
+}
+.di-row{
+  min-width:1200px;
+  max-width:1200px;
+  width:1200px;
+  display: inline-block;
+}
 }
